@@ -1,0 +1,68 @@
+=========================================
+============  Primeiro  =================
+=========================================
+1 - composer require laravel/ui
+2 - php artisan ui vue --auth
+3 - npm install vue-router
+4 - npm install
+5 - npm install laravel-mix --save-dev
+6 - npm install --global webpack
+7 - npm i vue-loader
+7.1 - touch webpack.mix.js
+8 - npm run dev
+
+=========================================
+========== Editor de texto  =============
+=========================================
+npm install --save "@tinymce/tinymce-vue@^3"
+https://github.com/nhn/toast-ui.vue-editor#using-npm
+
+http://image.intervention.io/getting_started/installation
+
+9 - para er as paginas do view
+Route::get("/{vue_capture?}",function(){
+    return view('welcome');
+})->where('vue_capture','[\/\w.-]*');
+
+10 - jwt, adicionar ao composer.json
+        "tymon/jwt-auth":"dev-develop"
+        https://jwt-auth.readthedocs.io/en/develop/laravel-installation/
+11 - depois faz-se um
+11.1 - php artisan make:middleware JWT
+12. http://image.intervention.io/getting_started/installation
+==========================================
+========  Pequenas alteracoes  ===========
+==========================================
+1 - app/providers/ AppServiceProvider
+2 - mudanças
+2.1 - use Illuminate\Support\Facades\Schema;
+2.2 - no Boot coloque
+Schema::defaultStringLength(191);
+3 - quando criarmos paginas no vuejs devemos correr o
+npm run watch para  a leitura automatica das alteracoes
+3.1 - npm run watch
+==========================================
+===========  Validacoes Vue  =============
+==========================================
+1 - Sweetalert
+1.1 - npm install sweetalert2
+1.2. npm i --save v-toaster
+==========================================
+============  Notificacoes  ==============
+==========================================
+Noty
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="js/noty/packaged/jquery.noty.packaged.min.js"></script>
+
+OU
+
+$ npm install noty
+
+Sweetalert
+devo baixar
+
+Taiwind
+https://vuejsexamples.com/a-headless-vue-notification-library-to-use-with-tailwind/
+
+paginate
+npm install laravel-vue-pagination
